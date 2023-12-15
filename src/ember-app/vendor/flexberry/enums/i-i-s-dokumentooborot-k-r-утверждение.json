@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.DokumentooborotKR",
+  "className": "Утверждение",
+  "enumObjects": {
+    "Утвержден": "Утвержден",
+    "НеУтвержден": "Не утвержден"
+  }
+}

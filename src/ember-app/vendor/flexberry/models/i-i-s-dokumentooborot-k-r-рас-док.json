@@ -1,0 +1,218 @@
+﻿{
+  "name": "IISDokumentooborotKRРасДок",
+  "modelName": "i-i-s-dokumentooborot-k-r-рас-док",
+  "className": "РасДок",
+  "nameSpace": "IIS.DokumentooborotKR",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "утверждение",
+      "type": "i-i-s-dokumentooborot-k-r-утверждение",
+      "flexberryType": "Утверждение",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "авПользователи",
+      "relatedTo": "i-i-s-dokumentooborot-k-r-ав-пользователи",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "формаДокумента",
+      "relatedTo": "i-i-s-dokumentooborot-k-r-форма-документа",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "РасДокE",
+      "modelName": "i-i-s-dokumentooborot-k-r-рас-док",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата рассмотрения",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "утверждение",
+          "caption": "Статус решения",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "IDПользователя",
+          "lookupValueField": "iDПользователя",
+          "relationName": "АвПользователи",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "АвПользователи.Сотрудники",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "фИОСотрудника",
+                  "caption": "Утверждающее лицо",
+                  "hidden": false,
+                  "index": 2
+                },
+                {
+                  "name": "отделы",
+                  "caption": "Утверждающий отдел",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "сотрудники",
+              "relatedTo": "i-i-s-dokumentooborot-k-r-сотрудники",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [],
+          "index": 1,
+          "type": "standard",
+          "caption": "ID Пользователя",
+          "name": "авПользователи",
+          "relatedTo": "i-i-s-dokumentooborot-k-r-ав-пользователи",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "ФормаДокумента",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование документа",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Наименование документа",
+          "name": "формаДокумента",
+          "relatedTo": "i-i-s-dokumentooborot-k-r-форма-документа",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "РасДокL",
+      "modelName": "i-i-s-dokumentooborot-k-r-рас-док",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата рассмотрения",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "утверждение",
+          "caption": "Статус решения",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "АвПользователи",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "АвПользователи.Сотрудники",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "фИОСотрудника",
+                  "caption": "Утверждающее лицо",
+                  "hidden": false,
+                  "index": 1
+                },
+                {
+                  "name": "отделы",
+                  "caption": "Утверждающий отдел",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "сотрудники",
+              "relatedTo": "i-i-s-dokumentooborot-k-r-сотрудники",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [],
+          "index": -1,
+          "type": "default",
+          "caption": "Утверждающее лицо",
+          "name": "авПользователи",
+          "relatedTo": "i-i-s-dokumentooborot-k-r-ав-пользователи",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ФормаДокумента",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование документа",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование документа",
+          "name": "формаДокумента",
+          "relatedTo": "i-i-s-dokumentooborot-k-r-форма-документа",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

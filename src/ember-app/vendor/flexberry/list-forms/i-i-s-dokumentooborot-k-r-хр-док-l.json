@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-dokumentooborot-k-r-хр-док-e",
+  "editForm": "i-i-s-dokumentooborot-k-r-хр-док-e",
+  "external": false,
+  "caption": "Хранение документов",
+  "name": "IISDokumentooborotKRХрДокL",
+  "className": "ХрДокL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-dokumentooborot-k-r-хр-док",
+      "modelProjection": "ХрДокL"
+    }
+  ]
+}
