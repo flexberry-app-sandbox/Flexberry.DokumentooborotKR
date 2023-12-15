@@ -22,13 +22,13 @@ export default Controller.extend({
             link: 'i-i-s-dokumentooborot-k-r-сотрудники-l',
             caption: i18n.t('forms.application.sitemap.информация-о-сотрудниках.i-i-s-dokumentooborot-k-r-сотрудники-l.caption'),
             title: i18n.t('forms.application.sitemap.информация-о-сотрудниках.i-i-s-dokumentooborot-k-r-сотрудники-l.title'),
-            icon: 'list',
+            icon: 'phone',
             children: null
           }, {
             link: 'i-i-s-dokumentooborot-k-r-должности-l',
             caption: i18n.t('forms.application.sitemap.информация-о-сотрудниках.i-i-s-dokumentooborot-k-r-должности-l.caption'),
             title: i18n.t('forms.application.sitemap.информация-о-сотрудниках.i-i-s-dokumentooborot-k-r-должности-l.title'),
-            icon: 'chart bar',
+            icon: 'book',
             children: null
           }]
         }, {
@@ -40,12 +40,13 @@ export default Controller.extend({
             link: 'i-i-s-dokumentooborot-k-r-сотрудники-l',
             caption: i18n.t('forms.application.sitemap.администратору-системы.i-i-s-dokumentooborot-k-r-сотрудники-l.caption'),
             title: i18n.t('forms.application.sitemap.администратору-системы.i-i-s-dokumentooborot-k-r-сотрудники-l.title'),
-            icon: 'paperclip',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-dokumentooborot-k-r-ав-пользователи-l',
             caption: i18n.t('forms.application.sitemap.администратору-системы.i-i-s-dokumentooborot-k-r-ав-пользователи-l.caption'),
             title: i18n.t('forms.application.sitemap.администратору-системы.i-i-s-dokumentooborot-k-r-ав-пользователи-l.title'),
+            icon: 'folder open',
             children: null
           }]
         }, {
@@ -57,7 +58,7 @@ export default Controller.extend({
             link: 'i-i-s-dokumentooborot-k-r-вход-в-систему-l',
             caption: i18n.t('forms.application.sitemap.пользователю.i-i-s-dokumentooborot-k-r-вход-в-систему-l.caption'),
             title: i18n.t('forms.application.sitemap.пользователю.i-i-s-dokumentooborot-k-r-вход-в-систему-l.title'),
-            icon: 'file',
+            icon: 'chart line',
             children: null
           }, {
             link: null,
@@ -67,18 +68,19 @@ export default Controller.extend({
               link: 'i-i-s-dokumentooborot-k-r-форма-документа-l',
               caption: i18n.t('forms.application.sitemap.пользователю.документация.i-i-s-dokumentooborot-k-r-форма-документа-l.caption'),
               title: i18n.t('forms.application.sitemap.пользователю.документация.i-i-s-dokumentooborot-k-r-форма-документа-l.title'),
-              icon: 'table',
+              icon: 'tasks',
               children: null
             }, {
               link: 'i-i-s-dokumentooborot-k-r-рас-док-l',
               caption: i18n.t('forms.application.sitemap.пользователю.документация.i-i-s-dokumentooborot-k-r-рас-док-l.caption'),
               title: i18n.t('forms.application.sitemap.пользователю.документация.i-i-s-dokumentooborot-k-r-рас-док-l.title'),
-              icon: 'phone',
+              icon: 'folder open',
               children: null
             }, {
               link: 'i-i-s-dokumentooborot-k-r-хр-док-l',
               caption: i18n.t('forms.application.sitemap.пользователю.документация.i-i-s-dokumentooborot-k-r-хр-док-l.caption'),
               title: i18n.t('forms.application.sitemap.пользователю.документация.i-i-s-dokumentooborot-k-r-хр-док-l.title'),
+              icon: 'briefcase',
               children: null
             }]
           }]

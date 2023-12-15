@@ -32,7 +32,7 @@ export let defineProjections = function (modelClass) {
       сотрудники: belongsTo('i-i-s-dokumentooborot-k-r-сотрудники', '', {
         фИОСотрудника: attr('ФИО Сотрудника', { index: 1 })
       }, { index: -1, hidden: true }),
-      логин: attr('Логин', { index: 2, hidden: true }),
+      логин: attr('Логин', { index: 2 }),
       пароль: attr('Пароль', { index: 3 })
     }, { index: 0, displayMemberPath: 'iDПользователя' })
   });

@@ -61,7 +61,7 @@
             {
               "name": "логин",
               "caption": "Логин",
-              "hidden": true,
+              "hidden": false,
               "index": 2
             },
             {
